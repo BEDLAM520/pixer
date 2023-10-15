@@ -1,0 +1,8 @@
+#pwa-header-div {
+  background: url("/assets/img/blob.svg?h=74f98e7ba9474e69f8af1fb99ce964c6") center / contain no-repeat;
+}
+
+#pwa-header-image {
+  min-height: 300px;
+}
+
