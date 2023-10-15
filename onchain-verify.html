@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>On-Chain Verify - pi[X]er</title>
+    <meta name="theme-color" content="#00a3ff">
+    <meta name="twitter:description" content="A Winner Picker using a Twitter[X] post URL, along with a preset #PIXER hashtag paired with a hashtag of your choice. Winner is picked through verifiable cryptographic randomization.">
+    <meta property="og:description" content="A Winner Picker using a Twitter[X] post URL, along with a preset #PIXER hashtag paired with a hashtag of your choice. Winner is picked through verifiable cryptographic randomization.">
+    <meta property="og:title" content="pi[X]er">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="pi[X]er">
+    <meta name="url" content="https://pixer.bss.design/onchain-verify.html">
+    <meta name="twitter:image" content="/assets/img/favicons/pixer1024.webp?h=53a727da83dd24f54928b0ab0a49f9f0">
+    <meta property="og:image" content="/assets/img/favicons/pixer1024.webp?h=53a727da83dd24f54928b0ab0a49f9f0">
+    <meta name="description" content="The On-Chain Verify page for pi[X]er.">
+    <link rel="apple-touch-icon" type="image/webp" sizes="180x180" href="/assets/img/favicons/pixer180.webp?h=111ed81aa338f595b431a0703d4c83c3">
+    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/img/favicons/pixer16.webp?h=4696de9b8820f4295a93b6dfc86bb29c">
+    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/img/favicons/pixer16.webp?h=4696de9b8820f4295a93b6dfc86bb29c" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="32x32" href="/assets/img/favicons/pixer32.webp?h=e0497c87b9ea3479b8b79c0e7cf27bc5">
+    <link rel="icon" type="image/webp" sizes="32x32" href="/assets/img/favicons/pixer32.webp?h=e0497c87b9ea3479b8b79c0e7cf27bc5" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/webp" sizes="180x180" href="/assets/img/favicons/pixer180.webp?h=111ed81aa338f595b431a0703d4c83c3">
+    <link rel="icon" type="image/webp" sizes="192x192" href="/assets/img/favicons/pixer192.webp?h=1ecbe7108741f866840b5b13f3c55090">
+    <link rel="icon" type="image/webp" sizes="512x512" href="/assets/img/favicons/pixer512.webp?h=35e6fc0383d645a1d10c1af6ea5101e3">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=4a137410e50fe91a22b09a0763454a44">
+    <link rel="manifest" href="/manifest.json?h=b892498daab5e2304dc1b42b6ccab364">
+    <link rel="stylesheet" href="/assets/css/Inter.css?h=415f10ba3513e94d46ca494b3b694e1b">
+    <link rel="stylesheet" href="/assets/css/style.css?h=ce362bbce16c2a99aef13b0d3ee95eb3">
+</head>
+
+<body>
+    <!-- Start: #navbar -->
+    <nav class="navbar sticky-top bg-body bg-opacity-75 py-3 navbar-dark p-2" id="mainNav" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Start: #nav-brand --><a class="navbar-brand d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-start align-items-start align-content-center align-self-center m-auto p-2" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center me-2 bs-icon p-2"><img class="rounded-circle img-fluid p-2" src="/assets/img/favicons/pixer192.webp?h=1ecbe7108741f866840b5b13f3c55090" loading="eager" width="192px" height="192px" alt="pi[X]er Logo"></span><span class="d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">pi[X]er</span></a><!-- End: #nav-brand -->
+            <!-- Start: #nav-toggle --><button data-bs-toggle="collapse" class="navbar-toggler p-2" data-bs-target="#navcol-1">
+                <!-- Start: #nav-toggle-hidden --><span class="visually-hidden p-2">Toggle navigation</span><!-- End: #nav-toggle-hidden -->
+                <!-- Start: #nav-toggle-icon --><span class="navbar-toggler-icon p-2"></span><!-- End: #nav-toggle-icon -->
+            </button><!-- End: #nav-toggle -->
+            <div class="collapse navbar-collapse p-2" id="navcol-1" data-bs-theme="dark">
+                <!-- Start: #nav-list -->
+                <ul class="navbar-nav mx-auto p-2" data-bs-theme="dark">
+                    <!-- Start: #nav-item-home -->
+                    <li class="nav-item p-2" id="nav-item-home">
+                        <!-- Start: #nav-item-home-link --><a class="nav-link p-2" href="/index.html">Winner Picker</a><!-- End: #nav-item-home-link -->
+                    </li><!-- End: #nav-item-home -->
+                    <!-- Start: #nav-item-verification -->
+                    <li class="nav-item p-2" id="nav-item-verification">
+                        <!-- Start: #nav-item-verification-link --><a class="nav-link p-2" href="/verification.html">Verification</a><!-- End: #nav-item-verification-link -->
+                    </li><!-- End: #nav-item-verification -->
+                    <!-- Start: #nav-item-onchain-verify -->
+                    <li class="nav-item p-2" id="nav-item-onchain-verify">
+                        <!-- Start: #nav-item-verification-link --><a class="nav-link active p-2" href="/onchain-verify.html">Verification</a><!-- End: #nav-item-verification-link -->
+                    </li><!-- End: #nav-item-onchain-verify -->
+                    <!-- Start: #nav-item-contact -->
+                    <li class="nav-item p-2" id="nav-item-contact">
+                        <!-- Start: #nav-item-contact-link --><a class="nav-link p-2" href="/contact.html">Contact</a><!-- End: #nav-item-contact-link -->
+                    </li><!-- End: #nav-item-contact -->
+                </ul><!-- End: #nav-list -->
+                <!-- Start: #bedlam520-link-button --><a class="btn btn-secondary btn-sm shadow d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" role="button" href="https://bedlam520nft.bss.design" data-bs-target="/verification.html" rel="external">BEDLAM520nft Homepage</a><!-- End: #bedlam520-link-button -->
+            </div>
+        </div>
+    </nav><!-- End: #navbar -->
+    <!-- Start: #header -->
+    <header class="bg-dark d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+        <!-- Start: #header-cont -->
+        <div class="container-fluid d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+            <!-- Start: #header-row -->
+            <div class="row d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+                <!-- Start: #header-col -->
+                <div class="col-auto text-center text-md-start d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+                    <!-- Start: #header-div -->
+                    <div class="text-center d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" data-bs-theme="dark">
+                        <!-- Start: #heading -->
+                        <h1 class="fw-bold text-center d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">pi[X]er</h1><!-- End: #heading -->
+                        <!-- Start: #header-p -->
+                        <p class="text-center d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">A simple, yet powerful, better X picker.</p><!-- End: #header-p -->
+                    </div><!-- End: #header-div -->
+                </div><!-- End: #header-col -->
+                <!-- Start: #title-image-col -->
+                <div class="col d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+                    <!-- Start: #title-image-cont -->
+                    <div class="d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" data-bs-theme="dark">
+                        <!-- Start: #title-image --><img class="rounded img-fluid d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" width="512px" height="512px" alt="pi[X]er Logo" loading="eager" src="/assets/img/favicons/pixer512.webp?h=35e6fc0383d645a1d10c1af6ea5101e3"><!-- End: #title-image -->
+                    </div><!-- End: #title-image-cont -->
+                </div><!-- End: #title-image-col -->
+            </div><!-- End: #header-row -->
+        </div><!-- End: #header-cont -->
+    </header><!-- End: #header -->
+    <!-- Start: #title-heading-cont -->
+    <div class="container-fluid d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+        <!-- Start: #title-heading-row -->
+        <div class="row d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+            <!-- Start: #title-heading-col -->
+            <div class="col d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">
+                <!-- Start: #title-heading-div -->
+                <div class="d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" data-bs-theme="dark">
+                    <!-- Start: #title-heading -->
+                    <h1 class="fw-bolder text-center text-info-emphasis d-flex flex-row flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2"><br><strong><span style="color: rgb(255, 255, 255);">Verify On-Chain Activity Here</span></strong></h1><!-- End: #title-heading -->
+                </div><!-- End: #title-heading-div -->
+            </div><!-- End: #title-heading-col -->
+        </div><!-- End: #title-heading-row -->
+    </div><!-- End: #title-heading-cont -->
+    <!-- Start: #verification-div -->
+    <section>
+        <!-- Start: #verication-cont -->
+        <div class="container-fluid d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+            <!-- Start: #verification-row -->
+            <div class="row d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                <!-- Start: #verification-col -->
+                <div class="col-auto d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                    <!-- Start: #verification -->
+                    <div class="container-fluid">
+                        <!-- Start: #verification-input-div -->
+                        <div class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" data-bs-theme="dark">
+                            <!-- Start: #verification-input row -->
+                            <div class="row d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                <!-- Start: #verification-input-col -->
+                                <div class="col-auto d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                    <!-- Start: #verification-input-p -->
+                                    <p class="fw-bolder text-center d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2">Address:</p><!-- End: #verification-input-p -->
+                                    <!-- Start: #verification-input --><input class="form-control-lg d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" type="text" id="userAddress" placeholder="0x..." name="Enter Verification Hash:" required="" data-bs-theme="dark"><!-- End: #verification-input -->
+                                </div><!-- End: #verification-input-col -->
+                            </div><!-- End: #verification-input row -->
+                        </div><!-- End: #verification-input-div -->
+                        <!-- Start: #verification-button-div -->
+                        <div class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" data-bs-theme="dark">
+                            <!-- Start: #verification-button-row -->
+                            <div class="row d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                <!-- Start: #verification-button-col -->
+                                <div class="col d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                    <!-- Start: #verification-button --><button class="btn btn-info btn-lg d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" id="chainVerifyButton" type="button">VERIFY!</button><!-- End: #verification-button -->
+                                </div><!-- End: #verification-button-col -->
+                            </div><!-- End: #verification-button-row -->
+                        </div><!-- End: #verification-button-div -->
+                    </div><!-- End: #verification -->
+                    <div class="container-fluid p-1" id="results-p-cont">
+                        <p class="fw-bolder text-center text-success-emphasis d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" id="results-p">Verification Result: </p>
+                    </div><!-- Start: #svg-cont -->
+                    <div class="container-fluid" id="results-cont">
+                        <div class="bg-body bg-opacity-25 shadow-lg d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" id="results-div" data-bs-theme="dark"><svg id="resultOutput" class="svg-container" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" border="rounded">svg-output&gt;</svg></div>
+                    </div><!-- End: #svg-cont -->
+                </div><!-- End: #verification-col -->
+            </div><!-- End: #verification-row -->
+        </div><!-- End: #verication-cont -->
+    </section><!-- End: #verification-div -->
+    <!-- Start: #contact-button-cont -->
+    <div class="container-fluid" id="contact-button-con">
+        <div class="row d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" id="contact-button-row">
+            <div class="col-md-12 p-2" id="contact-button-col">
+                <div class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" id="contact-button-p-div" data-bs-theme="dark">
+                    <p class="fw-bolder text-center text-warning-emphasis d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" id="contact-button-p">Questions or Concerns?</p>
+                </div>
+                <div class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-2" id="contact-button-div" data-bs-theme="dark"><a class="btn btn-warning btn-lg d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" role="button" id="contact-button" href="/contact.html">CONTACT</a></div>
+            </div>
+        </div>
+    </div><!-- End: #contact-button-cont -->
+    <!-- Start: #footer -->
+    <footer class="bg-dark d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+        <!-- Start: #footer-cont -->
+        <div class="container text-muted d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+            <!-- Start: #footer-row -->
+            <div class="row d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                <!-- Start: #footer-cont-1 -->
+                <div class="col d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                    <!-- Start: #footer-p -->
+                    <p class="d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">Copyright © 2023 BEDLAM520</p><!-- End: #footer-p -->
+                </div><!-- End: #footer-cont-1 -->
+                <!-- Start: #footer-cont-2 -->
+                <div class="col d-flex flex-column flex-grow-0 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                    <!-- Start: #bedlam-links -->
+                    <ul class="list-inline text-center text-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                        <!-- Start: #bedlam-www -->
+                        <li class="list-inline-item fw-bolder text-center text-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1"><a class="fw-bolder text-center link-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" href="https://bedlam520nft.bss.design" rel="external" data-bs-theme="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-globe2 fs-1 text-center text-light shadow d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"></path>
+                                </svg></a></li><!-- End: #bedlam-www -->
+                        <!-- Start: #bedlam-tw -->
+                        <li class="list-inline-item fw-bolder text-center text-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1"><a class="fw-bolder text-center link-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" href="https://twitter.com/bedlam520" rel="external" data-bs-theme="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter fs-1 text-center text-light shadow d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                </svg></a></li><!-- End: #bedlam-tw -->
+                        <!-- Start: #bedlam-ig -->
+                        <li class="list-inline-item fw-bolder text-center text-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1"><a class="fw-bolder text-center link-light d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1" href="htpps://instagram.com/bedlam520" rel="external" data-bs-theme="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram fs-1 text-center text-light shadow d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto p-1">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                </svg></a></li><!-- End: #bedlam-ig -->
+                    </ul><!-- End: #bedlam-links -->
+                </div><!-- End: #footer-cont-2 -->
+            </div><!-- End: #footer-row -->
+        </div><!-- End: #footer-cont -->
+    </footer><!-- End: #footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/randomizer.js?h=2cf907ebae249b4c0cd6efa2ccb1d7cd"></script>
+    <script src="/assets/js/verification.js?h=d26b7edd95673cb4f0a27f3cae9d5adb"></script>
+    <script src="/assets/js/bold-and-dark.js?h=f8e61f1da210b6e8cd629823686fcab2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script src="/assets/js/onchainverify.js?h=b4f638a241b72e84313682494db64da2"></script>
+</body>
+
+</html>
