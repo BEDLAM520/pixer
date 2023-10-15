@@ -28,14 +28,11 @@ const displayMerkleTreeVisualization = (svgElement, pathToWinner, entries) => {
 
     // Calculate the total number of levels in the Merkle tree
     const totalLevels = Math.ceil(Math.log2(entries.length));
-
-    // ... (rest of the code remains the same)
 };
 
 // Function to reverse the verification hash and determine the path to the winner
 const reverseVerificationHash = (verificationHash, entries) => {
-    // Implement the logic to reverse the verification hash and determine the path
-    // In this example, we'll assume the verification hash represents a binary path
+    // Logic to reverse the verification hash and determine the path
 
     const binaryPath = verificationHash
         .split('')
